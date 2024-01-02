@@ -1,0 +1,85 @@
+<header id="myDIV">
+    <div id="head" class="webpage">
+        <a href="/" class="logo" >
+        </a>
+        <div class="menu">
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__links">
+                    <!-- <a class="menu__links-item" href="/products/">Продукция</a>
+                    <a class="menu__links-item" href="/services/">Услуги</a> -->
+                    <!-- <a class="menu__links-item" href="/technology/">Технологии</a> -->
+                <!-- <a class="menu__links-item" href="/building/">Строительство</a> -->
+                <!-- <a class="menu__links-item" href="/about/">О компании</a> -->
+                <a class="menu__links-item" href="/fence/">Крафтовый забор</a> 
+                        <a class="menu__links-item" href="/loft_box/">Лофт бокс</a> 
+                <a class="menu__links-item nonborder" href="/contacts/">Контакты</a>
+            </div>
+            <div class="blackblock">
+            </div>
+        </div>
+        <div class="tel_box">
+                <a href="tel:067-634-25-72" class="phone">
+                        067-634-25-72
+                </a>
+                <a href="mailto:leushincompany@gmail.com" class="e_mail">leushincompany@gmail.com</a>
+            </div>
+        <!-- <script>
+            var el = document.getElementsByClassName('menu__icon');
+            var el2 = document.querySelector('header');
+            for(var i=0; i<el.length; i++) {
+                el[i].addEventListener('click', function (e) {
+                e.preventDefault();
+                el2.classList.toggle('menu-active');
+                });
+            }
+            function MenuAlwaysOnDisplay() {
+              if(document.body.clientWidth < '960') {
+                var element = document.getElementById("myDIV");
+                element.classList.remove("menu-active");
+              } else {
+                    return false;
+                }
+            }
+            window.addEventListener("resize", MenuAlwaysOnDisplay);
+        </script>
+        <script>
+            (function($){
+                $(function() {
+                    $('.menu__icon').on('click', function() { $(this).closest('.menu').toggleClass('menu_state_open');
+                    });
+                });
+            })(jQuery);
+        </script> -->
+        <script>
+                var el = document.getElementsByClassName('menu__icon');
+                var el2 = document.querySelector('menu');
+                for(var i=0; i<el.length; i++) {
+                    el[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    el2.classList.toggle('menu-active');
+                    });
+                }
+                function MenuAlwaysOnDisplay() {
+                  if(document.body.clientWidth < '960') {
+                    var element = document.getElementById("myDIV");
+                    element.classList.remove("menu-active");
+                  } else {
+                        return false;
+                    }
+                }
+                window.addEventListener("resize", MenuAlwaysOnDisplay);
+            </script>
+            <script>
+                (function($){
+                    $(function() {
+                        $('.menu__icon').on('click', function() { $(this).closest('.menu').toggleClass('menu_state_open');
+                        });
+                    });
+                })(jQuery);
+            </script>
+    </div>
+</header>

@@ -1,0 +1,133 @@
+<header id="myDIV">
+        <div id="head">
+                <div class="half_of_menu">
+            <a href="../" class="logo">
+            </a>
+        </div>
+            <div class="half_of_menu">
+            <div class="menu">
+                <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu__links">
+                    <div class="just_flex_box just_flex_box2">
+                            <!-- <a class="menu__links-item" href="../products/">Продукция</a>
+                            <a class="menu__links-item" href="../services/">Услуги</a> -->
+                            <!-- <a class="menu__links-item" href="../technology/">Технологии</a> -->
+                        <!-- <a class="menu__links-item" href="../building/">Строительство</a> -->
+                        <!-- <a class="menu__links-item" href="../about/">О компании</a> -->
+                        <a class="menu__links-item" href="../fence/">Крафтовый забор</a> 
+                        <a class="menu__links-item" href="../loft_box/">Лофт бокс</a> 
+                        <a class="menu__links-item nonborder" href="../contacts/">Контакты</a>
+                    </div>
+                    <div class="just_flex_box just_flex_box3">
+                        <!-- <a class="menu__links-item menu__links-item_lang nonborder2" href="">RU</a> -->
+                        <!-- <a class="menu__links-item menu__links-item_lang" href="../en/">EN</a> -->
+                    </div>
+                </div>
+                <div class="blackblock">
+                </div>
+            </div>
+            <!-- <div class="language menu__links">
+                <a class="menu__links-item menu__links-item_lang" href="/">RU</a>
+                    <a class="menu__links-item menu__links-item_lang" href="/">ENG</a>
+            </div> -->
+            </div>
+            <div class="tel_box">
+                    <a href="tel:067-634-25-72" class="phone">
+                            067-634-25-72
+                    </a>
+                    <a href="mailto:leushincompany@gmail.com" class="e_mail">leushincompany@gmail.com</a>
+                </div>
+            <script>
+                var el = document.getElementsByClassName('menu__icon');
+                var el2 = document.querySelector('menu');
+                for(var i=0; i<el.length; i++) {
+                    el[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    el2.classList.toggle('menu-active');
+                    });
+                }
+                function MenuAlwaysOnDisplay() {
+                  if(document.body.clientWidth < '1070') {
+                    var element = document.getElementById("myDIV");
+                    element.classList.remove("menu-active");
+                  } else {
+                        return false;
+                    }
+                }
+                window.addEventListener("resize", MenuAlwaysOnDisplay);
+            </script>
+            <script>
+                (function($){
+                    $(function() {
+                        $('.menu__icon').on('click', function() { $(this).closest('.menu').toggleClass('menu_state_open');
+                        });
+                    });
+                })(jQuery);
+            </script>
+        </div>
+    </header>
+<!--
+        <script>
+            var el = document.getElementsByClassName('menu__links-item');
+            for(var i=0; i<el.length; i++) {
+                el[i].addEventListener('mouseenter', showSub, false);
+                el[i].addEventListener('mouseleave', hideSub, false);
+            }
+            function showSub() {
+                if(this.children.length>1 && document.body.clientWidth > '1250') {
+                    this.children[1].style.display = "block";
+                } else {
+                    return false;
+                }
+            }
+            function hideSub() {
+                if(this.children.length>1 && document.body.clientWidth > '1250') {
+                    this.children[1].style.display = "none";
+                } else {
+                    return false;
+                }
+            }
+            var submenu = document.querySelector('.sub-menu')
+            function MenuAlwaysOnDisplay() {
+                console.log('back');
+                if(document.body.clientWidth < '1250') {
+                    submenu.style.display = "block";
+                } else {
+                    return false;
+                }
+            }
+            window.addEventListener("load", MenuAlwaysOnDisplay);
+            window.addEventListener("resize", MenuAlwaysOnDisplay);
+        </script>
+-->
+        <!-- <script>
+            var el = document.getElementsByClassName('menu__icon');
+            var el2 = document.querySelector('header');
+            for(var i=0; i<el.length; i++) {
+                el[i].addEventListener('click', function (e) {
+                e.preventDefault();
+                el2.classList.toggle('menu-active');
+                });
+            }
+            function MenuAlwaysOnDisplay() {
+              if(document.body.clientWidth < '960') {
+                var element = document.getElementById("myDIV");
+                element.classList.remove("menu-active");
+              } else {
+                    return false;
+                }
+            }
+            window.addEventListener("resize", MenuAlwaysOnDisplay);
+        </script>
+        <script>
+            (function($){
+                $(function() {
+                    $('.menu__icon').on('click', function() { $(this).closest('.menu').toggleClass('menu_state_open');
+                    });
+                });
+            })(jQuery);
+        </script> -->

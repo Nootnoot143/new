@@ -1,0 +1,70 @@
+<header id="myDIV">
+    <div id="head">
+            <div class="half_of_menu">
+        <a href="/" class="logo">
+        </a>
+    </div>
+        <div class="half_of_menu">
+        <div class="menu">
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__links">
+                <div class="just_flex_box just_flex_box2">
+                    <a class="menu__links-item" href="javascript://0" onclick="slowScroll ('#services')">Услуги</a>
+                    <a class="menu__links-item" href="javascript://0" onclick="slowScroll ('#fotogalery')">Как мы строим</a>
+                    <a class="menu__links-item" href="javascript://0" onclick="slowScroll ('#3d')">3D</a>
+                    <a class="menu__links-item" href="javascript://0" onclick="slowScroll ('#rules')">Форма сотрудничества</a>
+                    <a class="menu__links-item" href="javascript://0" onclick="slowScroll ('#documents')">Документы</a>
+                    <a class="menu__links-item nonborder" href="javascript://0" onclick="slowScroll ('#contacts')">Офис</a>
+                </div>
+                <div class="just_flex_box just_flex_box3">
+                    <!-- <a class="menu__links-item menu__links-item_lang nonborder2" href="">RU</a> -->
+                    <!-- <a class="menu__links-item menu__links-item_lang" href="en/">EN</a> -->
+                </div>
+            </div>
+            <div class="blackblock">
+            </div>
+        </div>
+        <!-- <div class="language menu__links">
+            <a class="menu__links-item menu__links-item_lang" href="/">RU</a>
+            <a class="menu__links-item menu__links-item_lang" href="/">ENG</a>
+        </div> -->
+    </div>
+                            <div class="tel_box">
+                                <a href="tel:067-634-25-72" class="phone">
+                                        067-634-25-72
+                                </a>
+                                <a href="mailto:stroyconsalt.dnepr@gmail.com" class="e_mail">stroyconsalt.dnepr@gmail.com</a>
+                            </div>
+        <script>
+            var el = document.getElementsByClassName('menu__icon');
+            var el2 = document.querySelector('menu');
+            for(var i=0; i<el.length; i++) {
+                el[i].addEventListener('click', function (e) {
+                e.preventDefault();
+                el2.classList.toggle('menu-active');
+                });
+            }
+            function MenuAlwaysOnDisplay() {
+              if(document.body.clientWidth < '1070') {
+                var element = document.getElementById("myDIV");
+                element.classList.remove("menu-active");
+              } else {
+                    return false;
+                }
+            }
+            window.addEventListener("resize", MenuAlwaysOnDisplay);
+        </script>
+        <script>
+            (function($){
+                $(function() {
+                    $('.menu__icon').on('click', function() { $(this).closest('.menu').toggleClass('menu_state_open');
+                    });
+                });
+            })(jQuery);
+        </script>
+    </div>
+</header>
